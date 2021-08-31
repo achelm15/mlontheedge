@@ -1,21 +1,15 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="#303030"
-      dark
-    >
+    <v-app-bar app color="#303030" dark>
       <div class="titleText">Machine Learning on the Edge</div>
       <v-spacer></v-spacer>
       <div class="tabContainer">
         <div class="tab" @click="changeRoute('/')">Home</div>
         <div class="tab" @click="changeRoute('/Team')">Team</div>
         <div class="tab" @click="changeRoute('/Timeline')">Timeline</div>
-         <div class="tab" @click="changeRoute('/Documents')">Documents</div>
+        <div class="tab" @click="changeRoute('/Documents')">Documents</div>
         <div class="tab" @click="changeRoute('/Pictures')">Pictures</div>
       </div>
-      
-
     </v-app-bar>
 
     <v-main class="main">
@@ -23,61 +17,37 @@
         <router-view></router-view>
       </v-container>
     </v-main>
-    <v-footer
-    dark
-    padless
-  >
-    <v-card
-      flat
-      tile
-      class="footer"
-    >
-      <v-card-text class="white--text pt-0">
-        <div class="footerText">
-          <v-card-text>
-              <v-btn
-                class="mx-4 white--text"
-                icon
-                @click="open('facebook')"
-              >
-                
-                  <v-icon size="24px">
-                    mdi-facebook
-                  </v-icon>
+    <v-footer dark padless>
+      <v-card flat tile class="footer">
+        <v-card-text class="white--text pt-0">
+          <div class="footerText">
+            <v-card-text>
+              <v-btn class="mx-4 white--text" icon @click="open('facebook')">
+                <v-icon size="24px">
+                  mdi-facebook
+                </v-icon>
               </v-btn>
-              <v-btn
-                class="mx-4 white--text"
-                icon
-                @click="open('instagram')"
-              >
-                
-                  <v-icon size="24px">
-                    mdi-instagram
-                  </v-icon>
+              <v-btn class="mx-4 white--text" icon @click="open('instagram')">
+                <v-icon size="24px">
+                  mdi-instagram
+                </v-icon>
               </v-btn>
-              <v-btn
-                class="mx-4 white--text"
-                icon
-                @click="open('twitter')"
-              >
-                
-                  <v-icon size="24px">
-                    mdi-twitter
-                  </v-icon>
+              <v-btn class="mx-4 white--text" icon @click="open('twitter')">
+                <v-icon size="24px">
+                  mdi-twitter
+                </v-icon>
               </v-btn>
-          </v-card-text>
-          <div class="about">About the Project</div>
-          <p>
-            This project aims to improve the performance of Machine Learning
-            algorithms on edge computing platforms
-          </p>
-          <div>
-            {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+            </v-card-text>
+            <div class="about">About the Project</div>
+            <p>
+              This project aims to improve the performance of Machine Learning
+              algorithms on edge computing platforms
+            </p>
+            <div>{{ new Date().getFullYear() }} — <strong>Vuetify</strong></div>
           </div>
-        </div>
-      </v-card-text>
-    </v-card>
-  </v-footer>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -121,10 +91,10 @@ export default {
 </script>
 
 <style scoped>
-.titleText{
+.titleText {
   padding-left: 2rem;
 }
-.tab{
+.tab {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,28 +102,28 @@ export default {
   width: 6rem;
   color: white;
 }
-.tab:hover{
+.tab:hover {
   cursor: pointer;
-  color: #C8C372;
+  color: #c8c372;
 }
-.tabContainer{
-  display:flex;
+.tabContainer {
+  display: flex;
   flex-direction: row;
   padding-right: 2rem;
 }
-.main{
+.main {
   border: 1px solid red;
-  background-color: #DDDDDD;
+  background-color: #dddddd;
 }
-.container{
+.container {
   background-color: white;
   height: inherit;
 }
-.footer{
+.footer {
   width: 100%;
   color: #303030;
 }
-.footerText{
+.footerText {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,7 +132,7 @@ export default {
   justify-content: center;
   text-align: center;
 }
-.about{
+.about {
   font-size: 1.1rem;
   padding-bottom: 0.2rem;
 }
