@@ -31,39 +31,51 @@
       flat
       tile
       class="footer"
-    
     >
-      
-
       <v-card-text class="white--text pt-0">
         <div class="footerText">
           <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 white--text"
-          icon
-        >
-          <v-icon size="24px">
-            {{ icon }}
-          </v-icon>
-        </v-btn>
-      </v-card-text>
-          About the Project
+              <v-btn
+                class="mx-4 white--text"
+                icon
+                @click="open('facebook')"
+              >
+                
+                  <v-icon size="24px">
+                    mdi-facebook
+                  </v-icon>
+              </v-btn>
+              <v-btn
+                class="mx-4 white--text"
+                icon
+                @click="open('instagram')"
+              >
+                
+                  <v-icon size="24px">
+                    mdi-instagram
+                  </v-icon>
+              </v-btn>
+              <v-btn
+                class="mx-4 white--text"
+                icon
+                @click="open('twitter')"
+              >
+                
+                  <v-icon size="24px">
+                    mdi-twitter
+                  </v-icon>
+              </v-btn>
+          </v-card-text>
+          <div class="about">About the Project</div>
           <p>
             This project aims to improve the performance of Machine Learning
             algorithms on edge computing platforms
           </p>
-          <v-card-text class="white--text">
-            
-          <v-divider></v-divider>
+          <div>
             {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-          </v-card-text>
+          </div>
         </div>
       </v-card-text>
-
-
-      
     </v-card>
   </v-footer>
   </v-app>
@@ -89,7 +101,21 @@ export default {
   methods:{
     changeRoute(route){
         router.push(route)
-    }
+    },
+    open(name){
+      if(name=="facebook"){
+         window.open(
+              "https://www.facebook.com/ece.department.csu/", "_blank");
+      }
+      if(name=="instagram"){
+         window.open(
+              "https://www.instagram.com/colostate_ece/?hl=en", "_blank");
+      }
+      if(name=="twitter"){
+         window.open(
+              "https://twitter.com/CSUEngineering", "_blank");
+      }
+    },
   }
 };
 </script>
@@ -124,13 +150,20 @@ export default {
   height: inherit;
 }
 .footer{
-  border: 1px solid indigo;
   width: 100%;
+  color: #303030;
 }
 .footerText{
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about{
+  font-size: 1.1rem;
+  padding-bottom: 0.2rem;
 }
 </style>
