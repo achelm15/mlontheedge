@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div class="outContainer">
     <v-app-bar app color="#303030" dark>
       <div class="titleText">Machine Learning on the Edge</div>
       <v-spacer></v-spacer>
@@ -11,18 +11,13 @@
         <div class="tab" @click="changeRoute('/Pictures')">Pictures</div>
       </div>
     </v-app-bar>
-
-    <v-main class="main">
-      <v-container class="container">
-        <router-view></router-view>
-      </v-container>
-    </v-main>
-    <v-footer dark padless>
-      <v-card flat tile class="footer">
+    <router-view class="router"></router-view>
+    <div class="footer">
+      <v-card flat dark color="#303030">
         <v-card-text class="white--text pt-0">
           <div class="footerText">
             <v-card-text>
-              <v-btn class="mx-4 white--text" icon @click="open('facebook')">
+              <v-btn icon @click="open('facebook')">
                 <v-icon size="24px">
                   mdi-facebook
                 </v-icon>
@@ -39,16 +34,16 @@
               </v-btn>
             </v-card-text>
             <div class="about">About the Project</div>
-            <p>
+            <p class="description">
               This project aims to improve the performance of Machine Learning
               algorithms on edge computing platforms
             </p>
-            <div>{{ new Date().getFullYear() }} — <strong>Vuetify</strong></div>
+            <div>{{ new Date().getFullYear() }} — CSU ECE</div>
           </div>
         </v-card-text>
       </v-card>
-    </v-footer>
-  </v-app>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -91,10 +86,34 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: 'Titillium';
+  src: local('Titillium'),
+    url('/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Titillium';
+  src: local('Titillium'),
+    url('/fonts/TitilliumWeb-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Titillium';
+  src: local('Titillium'),
+    url('/fonts/TitilliumWeb-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+.outContainer {
+  background-color: #dddddd;
+  height: 100%;
+}
 .titleText {
+  font-family: Titillium;
   padding-left: 2rem;
 }
 .tab {
+  font-family: Titillium;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,17 +130,12 @@ export default {
   flex-direction: row;
   padding-right: 2rem;
 }
-.main {
-  border: 1px solid red;
-  background-color: #dddddd;
-}
-.container {
-  background-color: white;
-  height: inherit;
-}
 .footer {
+  font-family: Titillium;
+  color: white;
   width: 100%;
-  color: #303030;
+  background-color: #303030;
+  bottom: 0;
 }
 .footerText {
   display: flex;
@@ -134,6 +148,9 @@ export default {
 }
 .about {
   font-size: 1.1rem;
-  padding-bottom: 0.2rem;
+}
+.description {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 </style>
