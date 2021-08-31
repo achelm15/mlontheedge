@@ -12,68 +12,71 @@
       The Team
       <img src="@/assets/IMG_3051.png" class="imageCrop" />
     </div>
-    <div class="row">
-      <div class="noteDark">
-        Summary
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+    <div class="spacers">
+      <div class="row">
+        <div class="noteBlue">
+          Summary
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="noteOrange">
+          Background
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
       </div>
-      <div class="noteLight">
-        Background
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <div class="row">
+        <div class="noteYellow">
+          Constraints
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="noteLime">
+          Goals
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="noteLight">
-        Constraints
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+
+      <div class="end">
+        <div class="team">TEAM MEMBERS</div>
+        <div class="names">
+          <div>ANDREW HELMREICH</div>
+          <div>FLETCHER OUREN</div>
+          <div>AHMED MUHAMMAD</div>
+          <div>ISAAC JACOBSON</div>
+        </div>
+        <div class="team">ADVISOR</div>
+        <div class="names">SUDEEP PASRICHA</div>
       </div>
-      <div class="noteDark">
-        Goals
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-    <div class="end">
-      <div class="team">TEAM MEMBERS</div>
-      <div class="names">
-        <div>ANDREW HELMREICH</div>
-        <div>FLETCHER OUREN</div>
-        <div>AHMED MUHAMMAD</div>
-        <div>ISAAC JACOBSON</div>
-      </div>
-      <div class="team">ADVISOR</div>
-      <div class="names">SUDEEP PASRICHA</div>
     </div>
   </div>
 </template>
@@ -86,6 +89,16 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.spacers {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
 .container {
   display: flex;
   justify-items: center;
@@ -153,6 +166,38 @@ export default Vue.extend({
   font-size: 2rem;
   padding: 3rem 8rem 3rem 8rem;
   background-color: #888888;
+  color: white;
+}
+.noteBlue {
+  width: 50%;
+  font-family: Titillium;
+  font-size: 2rem;
+  padding: 3rem 8rem 3rem 8rem;
+  background-color: #105456;
+  color: white;
+}
+.noteYellow {
+  width: 50%;
+  font-family: Titillium;
+  font-size: 2rem;
+  padding: 3rem 8rem 3rem 8rem;
+  background-color: #ecc530;
+  color: white;
+}
+.noteOrange {
+  width: 50%;
+  font-family: Titillium;
+  font-size: 2rem;
+  padding: 3rem 8rem 3rem 8rem;
+  background-color: #cc5430;
+  color: white;
+}
+.noteLime {
+  width: 50%;
+  font-family: Titillium;
+  font-size: 2rem;
+  padding: 3rem 8rem 3rem 8rem;
+  background-color: #12a4b6;
   color: white;
 }
 .paragraph {

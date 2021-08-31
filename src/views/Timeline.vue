@@ -80,22 +80,6 @@ export default Vue.extend({
   display: flex;
   flex-direction: row;
 }
-.noteDark {
-  width: 50%;
-  font-family: Titillium;
-  font-size: 2rem;
-  padding: 3rem 8rem 3rem 8rem;
-  background-color: #555555;
-  color: white;
-}
-.noteLight {
-  width: 50%;
-  font-family: Titillium;
-  font-size: 2rem;
-  padding: 3rem 8rem 3rem 8rem;
-  background-color: #888888;
-  color: white;
-}
 .paragraph {
   padding-top: 0.5rem;
   font-size: 1rem;
