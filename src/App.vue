@@ -18,19 +18,13 @@
           <div class="footerText">
             <v-card-text>
               <v-btn icon @click="open('facebook')">
-                <v-icon size="24px">
-                  mdi-facebook
-                </v-icon>
+                <v-icon size="24px"> mdi-facebook </v-icon>
               </v-btn>
               <v-btn class="mx-4 white--text" icon @click="open('instagram')">
-                <v-icon size="24px">
-                  mdi-instagram
-                </v-icon>
+                <v-icon size="24px"> mdi-instagram </v-icon>
               </v-btn>
               <v-btn class="mx-4 white--text" icon @click="open('twitter')">
-                <v-icon size="24px">
-                  mdi-twitter
-                </v-icon>
+                <v-icon size="24px"> mdi-twitter </v-icon>
               </v-btn>
             </v-card-text>
             <div class="about">About the Project</div>
@@ -51,38 +45,30 @@ import router from './router'
 export default {
   name: 'App',
 
-  components: {
-  },
+  components: {},
 
   data: () => ({
     //
-    icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
+    icons: ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram']
   }),
-  methods:{
-    changeRoute(route){
-        router.push(route)
+  methods: {
+    changeRoute(route) {
+      router.push(route)
+      window.scrollTo(0, 0)
     },
-    open(name){
-      if(name=="facebook"){
-         window.open(
-              "https://www.facebook.com/ece.department.csu/", "_blank");
+    open(name) {
+      if (name == 'facebook') {
+        window.open('https://www.facebook.com/ece.department.csu/', '_blank')
       }
-      if(name=="instagram"){
-         window.open(
-              "https://www.instagram.com/colostate_ece/?hl=en", "_blank");
+      if (name == 'instagram') {
+        window.open('https://www.instagram.com/colostate_ece/?hl=en', '_blank')
       }
-      if(name=="twitter"){
-         window.open(
-              "https://twitter.com/CSUEngineering", "_blank");
+      if (name == 'twitter') {
+        window.open('https://twitter.com/CSUEngineering', '_blank')
       }
-    },
+    }
   }
-};
+}
 </script>
 
 <style scoped>

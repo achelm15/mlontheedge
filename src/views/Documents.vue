@@ -1,78 +1,17 @@
 <template>
   <div class="container">
-    <div class="titleText">
-      MACHINE LEARNING
-      <div class="subtitleText">ON THE EDGE</div>
-      <div class="eceText">
-        <div>CSU ECE SENIOR DESIGN</div>
-        <div>FALL 2021 - SPRING 2022</div>
-      </div>
-    </div>
-    <div class="mainContainer">
-      The Team
-      <img src="@/assets/IMG_3051.png" class="imageCrop" />
-    </div>
-    <div class="noteDark">
-      Summary
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="noteLight">
-      Background
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="noteDark">
-      Constraints
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="noteLight">
-      Goals
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
+    <div class="titleText">DOCUMENTS</div>
+    <div class="mainContainer">Check back later for more</div>
     <div class="end">
-      <div class="team">
-        TEAM MEMBERS
-      </div>
-      <div class="names">
-        <div>ANDREW HELMREICH</div>
-        <div>FLETCHER OUREN</div>
-        <div>AHMED MUHAMMAD</div>
-      </div>
-      <div class="team">
-        ADVISOR
-      </div>
-      <div class="names">SUDEEP PASRICHA</div>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
     </div>
   </div>
 </template>
@@ -80,7 +19,7 @@
 <script>
 import Vue from 'vue'
 export default Vue.extend({
-    name: "Home"
+  name: 'Home'
 })
 </script>
 
@@ -93,10 +32,11 @@ export default Vue.extend({
   background-color: #dddddd;
 }
 .titleText {
-  background-color: #1e4d2bdd;
+  background-color: #1e4d2b;
   width: inherit;
   color: white;
   padding-top: 5rem;
+  padding-bottom: 2rem;
   font-family: Titillium;
   font-size: 4rem;
   font-weight: 400;
@@ -126,6 +66,7 @@ export default Vue.extend({
   font-family: Titillium;
   font-size: 2rem;
   padding-bottom: 3rem;
+  min-height: 30rem;
 }
 .imageCrop {
   width: 50rem; /* width of container */
@@ -133,7 +74,13 @@ export default Vue.extend({
   object-fit: cover;
   object-position: 0% 40%;
 }
+.row {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+}
 .noteDark {
+  width: 50%;
   font-family: Titillium;
   font-size: 2rem;
   padding: 3rem 8rem 3rem 8rem;
@@ -141,6 +88,7 @@ export default Vue.extend({
   color: white;
 }
 .noteLight {
+  width: 50%;
   font-family: Titillium;
   font-size: 2rem;
   padding: 3rem 8rem 3rem 8rem;
@@ -156,7 +104,7 @@ export default Vue.extend({
   font-size: 2rem;
   padding: 3rem 8rem 3rem 8rem;
   width: inherit;
-  background-color: #1e4d2bdd;
+  background-color: #1e4d2b;
   color: white;
   margin-bottom: 2rem;
   display: flex;
@@ -172,5 +120,6 @@ export default Vue.extend({
   font-size: 1.2rem;
   font-weight: 100;
   margin: 0.5rem;
+  text-align: center;
 }
 </style>
