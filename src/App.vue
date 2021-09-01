@@ -112,8 +112,7 @@ export default {
 }
 .tab:hover {
   cursor: pointer;
-  /* color: #c8c372; */
-  color: blue;
+  color: #c8c372;
 }
 .tabContainer {
   display: flex;
