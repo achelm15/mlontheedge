@@ -47,16 +47,6 @@ export default Vue.extend({
   justify-items: center;
   align-items: center;
 }
-.subtitleText {
-  font-size: 2rem;
-  font-weight: 400;
-  padding-bottom: 4rem;
-}
-.eceText {
-  font-weight: 200;
-  font-size: 2rem;
-  padding-bottom: 3rem;
-}
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -96,15 +86,5 @@ export default Vue.extend({
   flex-direction: column;
   justify-items: center;
   align-items: center;
-}
-.team {
-  font-size: 2rem;
-  font-weight: 400;
-}
-.names {
-  font-size: 1.2rem;
-  font-weight: 100;
-  margin: 0.5rem;
-  text-align: center;
 }
 </style>

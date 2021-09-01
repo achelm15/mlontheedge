@@ -90,6 +90,9 @@ export default {
     url('/fonts/TitilliumWeb-ExtraLight.ttf') format('truetype');
   font-weight: 200;
 }
+.router {
+  margin-bottom: -3.5rem;
+}
 .outContainer {
   background-color: #dddddd;
   height: 100%;

@@ -45,16 +45,6 @@ export default Vue.extend({
   justify-items: center;
   align-items: center;
 }
-.subtitleText {
-  font-size: 2rem;
-  font-weight: 400;
-  padding-bottom: 4rem;
-}
-.eceText {
-  font-weight: 200;
-  font-size: 2rem;
-  padding-bottom: 3rem;
-}
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -68,32 +58,10 @@ export default Vue.extend({
   padding-bottom: 3rem;
   min-height: 30rem;
 }
-.imageCrop {
-  width: 50rem; /* width of container */
-  height: 30rem; /* height of container */
-  object-fit: cover;
-  object-position: 0% 40%;
-}
 .row {
   width: inherit;
   display: flex;
   flex-direction: row;
-}
-.noteDark {
-  width: 50%;
-  font-family: Titillium;
-  font-size: 2rem;
-  padding: 3rem 8rem 3rem 8rem;
-  background-color: #555555;
-  color: white;
-}
-.noteLight {
-  width: 50%;
-  font-family: Titillium;
-  font-size: 2rem;
-  padding: 3rem 8rem 3rem 8rem;
-  background-color: #888888;
-  color: white;
 }
 .paragraph {
   padding-top: 0.5rem;
@@ -111,15 +79,5 @@ export default Vue.extend({
   flex-direction: column;
   justify-items: center;
   align-items: center;
-}
-.team {
-  font-size: 2rem;
-  font-weight: 400;
-}
-.names {
-  font-size: 1.2rem;
-  font-weight: 100;
-  margin: 0.5rem;
-  text-align: center;
 }
 </style>

@@ -52,7 +52,7 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div class="noteLime">
+        <div class="noteLightBlue">
           Goals
           <p class="paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -98,6 +98,8 @@ export default Vue.extend({
   align-items: center;
   background-color: white;
   width: 100%;
+  height: 100%;
+  padding-bottom: 3rem;
 }
 .container {
   display: flex;
@@ -152,22 +154,6 @@ export default Vue.extend({
   display: flex;
   flex-direction: row;
 }
-.noteDark {
-  width: 50%;
-  font-family: Titillium;
-  font-size: 2rem;
-  padding: 3rem 8rem 3rem 8rem;
-  background-color: #555555;
-  color: white;
-}
-.noteLight {
-  width: 50%;
-  font-family: Titillium;
-  font-size: 2rem;
-  padding: 3rem 8rem 3rem 8rem;
-  background-color: #888888;
-  color: white;
-}
 .noteBlue {
   width: 50%;
   font-family: Titillium;
@@ -192,7 +178,7 @@ export default Vue.extend({
   background-color: #cc5430;
   color: white;
 }
-.noteLime {
+.noteLightBlue {
   width: 50%;
   font-family: Titillium;
   font-size: 2rem;
