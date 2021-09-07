@@ -12,55 +12,16 @@
             </v-btn>
           </div>
           <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Andrew is a senior at Colorado State studying Computer Engineering
+            while minoring in Computer Science. He is interested in computer
+            vision through Machine Learning due to his desire to work with
+            autonomous vehicles in the future. Outside of the classroom, Andrew
+            is a member of the CSU baseball team, and involved with Student
+            Mobilization at CSU.
           </p>
         </div>
         <div class="column">
           <img src="@/assets/IMG_2823m.png" class="imageCrop" />
-          <div class="nameHeader">
-            FLETCHER OUREN
-            <v-btn icon @click="open('fletcher')">
-              <v-icon size="24px"> mdi-linkedin </v-icon>
-            </v-btn>
-          </div>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="column">
-          <img src="@/assets/IMG_2823a.png" class="imageCrop" />
-          <div class="nameHeader">
-            AHMED MUHAMMAD
-            <v-btn icon @click="open('ahmed')">
-              <v-icon size="24px"> mdi-linkedin </v-icon>
-            </v-btn>
-          </div>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img src="@/assets/IMG_2823a.png" class="imageCrop" />
           <div class="nameHeader">
             ISAAC JACOBSON
             <v-btn icon @click="open('isaac')">
@@ -68,16 +29,54 @@
             </v-btn>
           </div>
           <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Isaac is a third year student at CSU majoring in Computer
+            Engineering. His major interests are machine/deep learning and
+            computer architecture so the Machine Learning on the Edge project
+            had natural appeal to him. Outside of school Isaac loves to swim,
+            travel, and play chess. Isaac is joining this project as a first
+            semester VIP student eager to help and learn.
           </p>
         </div>
+      </div>
+      <div class="row">
         <div class="column">
+          <img src="@/assets/IMG_2823a.png" class="imageCrop" />
+          <div class="nameHeader">
+            AHMED MOHAMMAD
+            <v-btn icon @click="open('ahmed')">
+              <v-icon size="24px"> mdi-linkedin </v-icon>
+            </v-btn>
+          </div>
+          <p class="paragraph">
+            Ahmed is a senior studying Computer Engineering while minoring in
+            Computer Science at CSU. Due to an interest in both computers and
+            cars, the combination of the two within self driving vehicles such
+            as those developed by Tesla led Ahmed to become interested in
+            Maching Learning. Outside of the classroom, Ahmed enjoys watching
+            and playing soccer but more importantly, caring for his family.
+          </p>
+        </div>
+        <div class="column2">
+          <img src="@/assets/IMG_2823a.png" class="imageCrop" />
+          <div class="nameHeader">
+            FLETCHER OUREN
+            <v-btn icon @click="open('fletcher')">
+              <v-icon size="24px"> mdi-linkedin </v-icon>
+            </v-btn>
+          </div>
+          <p class="paragraph">
+            Fletcher is a senior earning a second degree in Computer engineering
+            after earning an international business degree in 2015. He decided
+            that he needed a more technical background to accomplish his goals.
+            Feltcher hopes to employ cutting edge technology to help solve
+            society’s most pressing issues such as climate change and renewable
+            energy management. Apart from computer related studies, you can find
+            Fletcher riding bikes, hiking, or writing short stories.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column2">
           <img src="@/assets/IMG_2823a.png" class="imageCrop" />
           <div class="nameHeader">
             SUDEEP PASRICHA
@@ -110,13 +109,13 @@ export default Vue.extend({
         window.open('https://www.linkedin.com/in/andrewhelmreich/', '_blank')
       }
       if (name == 'fletcher') {
-        window.open('https://www.linkedin.com/in/andrewhelmreich/', '_blank')
+        window.open('https://www.linkedin.com/in/fouren/', '_blank')
       }
       if (name == 'ahmed') {
-        window.open('https://www.linkedin.com/in/andrewhelmreich/', '_blank')
+        window.open('https://www.linkedin.com/in/ahmedmohammad89', '_blank')
       }
       if (name == 'isaac') {
-        window.open('https://www.linkedin.com/in/andrewhelmreich/', '_blank')
+        window.open('https://www.linkedin.com/in/isaac-jacobson/', '_blank')
       }
       if (name == 'sudeep') {
         window.open('https://www.linkedin.com/in/andrewhelmreich/', '_blank')
@@ -165,7 +164,14 @@ export default Vue.extend({
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  height: 47rem;
+}
+.column2 {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50rem;
 }
 .imageCrop {
   width: inherit; /* width of container */
@@ -194,7 +200,7 @@ export default Vue.extend({
   width: 20rem;
   padding-top: 0.5rem;
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
 }
 .end {
   font-family: Titillium;

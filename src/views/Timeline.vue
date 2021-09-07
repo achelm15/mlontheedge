@@ -2,18 +2,29 @@
   <div class="container">
     <div class="titleText">TIMELINE</div>
     <div class="mainContainer">
-      <img src="@/assets/timeline.png" class="imageCrop" />
+      <div class="row">
+        <div class="headerDate">Date</div>
+        <div class="headerItem">Item</div>
+        <div class="headerStatus">Status</div>
+      </div>
+      <div class="row" v-for="item in list" :key="item">
+        <div class="headerDate">{{ item.date }}</div>
+        <div class="headerItem">{{ item.item }}</div>
+        <div
+          :class="
+            item.status === 'Completed'
+              ? 'headerStatusCompleted'
+              : item.status === 'In Progress'
+              ? 'headerStatusInProgress'
+              : 'headerStatusIncomplete'
+          "
+        >
+          {{ item.status }}
+        </div>
+      </div>
     </div>
     <div class="end">
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+      <p class="paragraph">hi</p>
     </div>
   </div>
 </template>
@@ -21,7 +32,52 @@
 <script>
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'Home'
+  name: 'Home',
+  data() {
+    return {
+      headers: ['Date', 'Item', 'Status'],
+      list: [
+        {
+          date: '9/15/2021',
+          item: 'Publish Initial Website',
+          status: 'Completed'
+        },
+        {
+          date: '9/17/2021',
+          item: 'Outline Initial Project Plan',
+          status: 'In Progress'
+        },
+        {
+          date: '9/17/2021',
+          item: 'Finish Final Report',
+          status: 'Incomplete'
+        },
+        {
+          date: '9/17/2021',
+          item: 'Finish Final Report',
+          status: 'Incomplete'
+        },
+        {
+          date: '9/17/2021',
+          item: 'Finish Final Report',
+          status: 'Incomplete'
+        },
+        {
+          date: '9/17/2021',
+          item: 'Finish Final Report',
+          status: 'Incomplete'
+        }
+      ]
+    }
+  },
+  methods: {
+    getColor(calories) {
+      console.log(calories)
+      if (calories > 400) return 'red'
+      else if (calories > 200) return 'orange'
+      else return 'green'
+    }
+  }
 })
 </script>
 
@@ -52,6 +108,9 @@ export default Vue.extend({
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
   width: inherit;
   background-color: white;
   padding-top: 3rem;
@@ -59,16 +118,41 @@ export default Vue.extend({
   font-size: 2rem;
   padding-bottom: 3rem;
 }
-.imageCrop {
-  width: 50rem; /* width of container */
-  height: 30rem; /* height of container */
-  object-fit: cover;
-  object-position: 50% 0%;
-}
 .row {
-  width: inherit;
+  width: 90%;
   display: flex;
   flex-direction: row;
+  border-bottom: 0.1rem solid #1e4d2b;
+  padding: 0.4rem 0rem 0.4rem 0rem;
+}
+.headerDate {
+  font-size: 1rem;
+  width: 20%;
+}
+.headerItem {
+  font-size: 1rem;
+  width: 60%;
+  border-right: 0.1rem solid #1e4d2b;
+  border-left: 0.1rem solid #1e4d2b;
+}
+.headerStatus {
+  font-size: 1rem;
+  width: 20%;
+}
+.headerStatusCompleted {
+  color: #1e4d2b;
+  font-size: 1rem;
+  width: 20%;
+}
+.headerStatusInProgress {
+  color: #999558;
+  font-size: 1rem;
+  width: 20%;
+}
+.headerStatusIncomplete {
+  color: #cc5430;
+  font-size: 1rem;
+  width: 20%;
 }
 .paragraph {
   padding-top: 0.5rem;
