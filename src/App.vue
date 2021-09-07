@@ -160,6 +160,7 @@ export default {
   padding-right: 2rem;
 }
 .footer {
+  padding-bottom: 1rem;
   font-family: Titillium;
   color: white;
   width: 100%;

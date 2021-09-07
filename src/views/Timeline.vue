@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="end">
-      <p class="paragraph">hi</p>
+      <p class="paragraph">Last Updated 9/17/2021</p>
     </div>
   </div>
 </template>
@@ -38,6 +38,11 @@ export default Vue.extend({
       headers: ['Date', 'Item', 'Status'],
       list: [
         {
+          date: '9/07/2021',
+          item: 'Research and Test Image Classification Models',
+          status: 'In Progress'
+        },
+        {
           date: '9/15/2021',
           item: 'Publish Initial Website',
           status: 'Completed'
@@ -48,22 +53,37 @@ export default Vue.extend({
           status: 'In Progress'
         },
         {
-          date: '9/17/2021',
-          item: 'Finish Final Report',
+          date: '10/15/2021',
+          item: 'Research and Test Video Recognition Models',
           status: 'Incomplete'
         },
         {
-          date: '9/17/2021',
-          item: 'Finish Final Report',
+          date: '11/15/2021',
+          item: 'Begin to Attempt LPCV Challenge',
           status: 'Incomplete'
         },
         {
-          date: '9/17/2021',
-          item: 'Finish Final Report',
+          date: '12/15/2021',
+          item: 'Evaluate and Acquire Edge Devices for Deployment',
           status: 'Incomplete'
         },
         {
-          date: '9/17/2021',
+          date: '2/15/2021',
+          item: 'Optimize Model for Edge Devices',
+          status: 'Incomplete'
+        },
+        {
+          date: '3/15/2021',
+          item: 'Attempt Controlled On-Vehicle Video Processing',
+          status: 'Incomplete'
+        },
+        {
+          date: '4/15/2021',
+          item: 'Attempt Uncontroled On-Vehicle Video Processing',
+          status: 'Incomplete'
+        },
+        {
+          date: '5/05/2021',
           item: 'Finish Final Report',
           status: 'Incomplete'
         }

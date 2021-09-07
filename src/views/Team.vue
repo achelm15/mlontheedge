@@ -2,6 +2,7 @@
   <div class="container">
     <div class="titleText">THE TEAM</div>
     <div class="mainContainer">
+      <div>STUDENTS</div>
       <div class="row">
         <div class="column">
           <img src="@/assets/IMG_2823.png" class="imageCrop" />
@@ -39,7 +40,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="column">
+        <div class="column2">
           <img src="@/assets/IMG_2823a.png" class="imageCrop" />
           <div class="nameHeader">
             AHMED MOHAMMAD
@@ -77,21 +78,24 @@
       </div>
       <div class="row">
         <div class="column2">
+          <div class="spacing">ADVISING PROFESSOR</div>
           <img src="@/assets/IMG_2823a.png" class="imageCrop" />
           <div class="nameHeader">
-            SUDEEP PASRICHA
+            DR. SUDEEP PASRICHA
             <v-btn icon @click="open('sudeep')">
-              <v-icon size="24px"> mdi-linkedin </v-icon>
+              <v-icon size="24px"> mdi-web-box </v-icon>
             </v-btn>
           </div>
           <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Sudeep Pasricha is a Walter Scott Jr. College of Engineering
+            Professor in the Department of Electrical and Computer Engineering,
+            the Department of Computer Science, and the Department of Systems
+            Engineering at Colorado State University. He is Director of the
+            Embedded, High Performance, and Intelligent Computing (EPIC)
+            Laboratory and the Chair of Computer Engineering. Prof. Pasricha’s
+            research broadly focuses on software algorithms, hardware
+            architectures, and hardware-software co-design for energy-efficient,
+            fault-tolerant, real-time, and secure computing.
           </p>
         </div>
       </div>
@@ -118,7 +122,7 @@ export default Vue.extend({
         window.open('https://www.linkedin.com/in/isaac-jacobson/', '_blank')
       }
       if (name == 'sudeep') {
-        window.open('https://www.linkedin.com/in/andrewhelmreich/', '_blank')
+        window.open('https://www.engr.colostate.edu/~sudeep/', '_blank')
       }
     }
   }
@@ -148,7 +152,7 @@ export default Vue.extend({
   align-items: center;
 }
 .mainContainer {
-  padding: 0rem 0.75rem 2rem 0.75rem;
+  padding: 2rem 0.75rem 10rem 0.75rem;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -160,18 +164,18 @@ export default Vue.extend({
   font-size: 2rem;
 }
 .column {
-  width: 33%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45rem;
+}
+.column2 {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 47rem;
-}
-.column2 {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50rem;
 }
 .imageCrop {
   width: inherit; /* width of container */
@@ -197,7 +201,7 @@ export default Vue.extend({
   font-size: 1.4rem;
 }
 .paragraph {
-  width: 20rem;
+  width: 25rem;
   padding-top: 0.5rem;
   font-size: 1rem;
   text-align: left;
@@ -214,5 +218,8 @@ export default Vue.extend({
   flex-direction: column;
   justify-items: center;
   align-items: center;
+}
+.spacing {
+  margin-bottom: 2rem;
 }
 </style>
