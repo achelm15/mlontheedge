@@ -15,27 +15,17 @@
     <div class="spacers">
       <div class="row">
         <div class="noteBlue">
-          Summary
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="noteOrange">
           Background
           <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Maching learning has become increasingly relevant in recent years
+            across all computing devices. Machine Learning models have a variety
+            of uses, such as image detection, speech recognition, and behavior
+            recognition. Unfortunately, Machine Learning models are generally
+            large and complex, leading to poor performance on embedded, IoT, and
+            edge devices. Such devices included smart appliances, autonomous
+            vehicles, smartphones and smartwatches, Raspberry Pi, and Arduino
+            devices. As a result, it is necessary for these models to be
+            optimized and design specifically with these devices in mind.
           </p>
         </div>
       </div>
@@ -43,25 +33,28 @@
         <div class="noteYellow">
           Constraints
           <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            As this project aims to optimize machine learning models,
+            specifically Convolutional Nueral Networks, on resource constrained
+            devices the constraints for this project are many. These devices
+            generally operate on low power with a smaller amount of memory than
+            seen on other computing platforms. Additionally, these devices
+            generally lack processing power of their larger counterparts. As
+            such, the models developed within this project must be able to
+            operate on a small amout of power, memory, and processing power.
           </p>
         </div>
-        <div class="noteLightBlue">
+        <div class="noteOrange">
           Goals
           <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            The goal of this project is to design and optmize machine learning
+            algorithms for deployment on IoT, embedded and edge computing
+            devices. Specifically, the project will result in machine learning
+            models for image classification and natural language processing.
+            These models will be optimized through techniques such as pruning,
+            quantization, and knowledge distillation. The resulting models
+            should be able to produce accurate results much more quickly than
+            current, un-optimized models. These models will be deployed on a
+            variety of devices including Raspberry Pi and smart devices.
           </p>
         </div>
       </div>
@@ -71,11 +64,11 @@
         <div class="names">
           <div>ANDREW HELMREICH</div>
           <div>FLETCHER OUREN</div>
-          <div>AHMED MUHAMMAD</div>
+          <div>AHMED MOHAMMAD</div>
           <div>ISAAC JACOBSON</div>
         </div>
         <div class="team">ADVISOR</div>
-        <div class="names">SUDEEP PASRICHA</div>
+        <div class="names">DR. SUDEEP PASRICHA</div>
       </div>
     </div>
   </div>
@@ -155,7 +148,7 @@ export default Vue.extend({
   flex-direction: row;
 }
 .noteBlue {
-  width: 50%;
+  width: 100%;
   font-family: Titillium;
   font-size: 2rem;
   padding: 3rem 8rem 3rem 8rem;

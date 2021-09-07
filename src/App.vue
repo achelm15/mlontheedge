@@ -27,12 +27,23 @@
                 <v-icon size="24px"> mdi-twitter </v-icon>
               </v-btn>
             </v-card-text>
+
             <div class="about">About the Project</div>
             <p class="description">
               This project aims to improve the performance of Machine Learning
               algorithms on edge computing platforms
             </p>
             <div>{{ new Date().getFullYear() }} — CSU ECE</div>
+            <div class="linkContainer">
+              <div class="link" @click="open('support')">
+                Support our Program
+              </div>
+              <div class="link" @click="open('other')">
+                Other ECE Sr. Design Projects
+              </div>
+              <div class="link" @click="open('department')">ECE Department</div>
+              <div class="link" @click="open('website')">CSU Website</div>
+            </div>
           </div>
         </v-card-text>
       </v-card>
@@ -65,6 +76,24 @@ export default {
       }
       if (name == 'twitter') {
         window.open('https://twitter.com/CSUEngineering', '_blank')
+      }
+      if (name == 'support') {
+        window.open(
+          'https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE',
+          '_blank'
+        )
+      }
+      if (name == 'other') {
+        window.open(
+          'https://www.engr.colostate.edu/ECE401/AY21_senior_design_projects.php',
+          '_blank'
+        )
+      }
+      if (name == 'department') {
+        window.open('https://www.engr.colostate.edu/ece/', '_blank')
+      }
+      if (name == 'website') {
+        window.open('https://www.colostate.edu/', '_blank')
       }
     }
   }
@@ -111,6 +140,17 @@ export default {
   color: white;
 }
 .tab:hover {
+  cursor: pointer;
+  color: #c8c372;
+}
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+}
+.link {
+  margin: 1rem 0.5rem 0rem 0.5rem;
+}
+.link:hover {
   cursor: pointer;
   color: #c8c372;
 }
