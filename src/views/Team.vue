@@ -5,7 +5,7 @@
       <div>STUDENTS</div>
       <div class="row">
         <div class="column">
-          <img src="@/assets/IMG_2823.png" class="imageCrop" />
+          <img src="@/assets/andrew.png" class="imageCrop" />
           <div class="nameHeader">
             ANDREW HELMREICH
             <v-btn icon @click="open('andrew')">
@@ -41,7 +41,7 @@
       </div>
       <div class="row">
         <div class="column2">
-          <img src="@/assets/IMG_2823a.png" class="imageCrop" />
+          <img src="@/assets/ahmed.png" class="imageCrop" />
           <div class="nameHeader">
             AHMED MOHAMMAD
             <v-btn icon @click="open('ahmed')">
@@ -58,7 +58,7 @@
           </p>
         </div>
         <div class="column2">
-          <img src="@/assets/IMG_2823a.png" class="imageCrop" />
+          <img src="@/assets/fletcher.png" class="imageCrop" />
           <div class="nameHeader">
             FLETCHER OUREN
             <v-btn icon @click="open('fletcher')">
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="column2">
           <div class="spacing">ADVISING PROFESSOR</div>
-          <img src="@/assets/IMG_2823a.png" class="imageCrop" />
+          <img src="@/assets/sudeep.jpg" class="imageCrop" />
           <div class="nameHeader">
             DR. SUDEEP PASRICHA
             <v-btn icon @click="open('sudeep')">
@@ -182,7 +182,7 @@ export default Vue.extend({
   height: 30rem; /* height of container */
   width: 20rem;
   object-fit: cover;
-  object-position: 0% 10%;
+  object-position: 50% 10%;
 }
 .row {
   width: inherit;

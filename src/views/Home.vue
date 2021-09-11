@@ -10,7 +10,7 @@
     </div>
     <div class="mainContainer">
       The Team
-      <img src="@/assets/IMG_3051.png" class="imageCrop" />
+      <img src="@/assets/team.jpg" class="imageCrop" />
     </div>
     <div class="spacers">
       <div class="row">
@@ -140,7 +140,7 @@ export default Vue.extend({
   width: 50rem; /* width of container */
   height: 30rem; /* height of container */
   object-fit: cover;
-  object-position: 0% 40%;
+  object-position: 0% 30%;
 }
 .row {
   width: inherit;

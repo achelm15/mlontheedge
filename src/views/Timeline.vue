@@ -136,14 +136,14 @@ export default Vue.extend({
   padding-top: 3rem;
   font-family: Titillium;
   font-size: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 .row {
   width: 90%;
   display: flex;
   flex-direction: row;
   border-bottom: 0.1rem solid #1e4d2b;
-  padding: 0.4rem 0rem 0.4rem 0rem;
+  padding: 1rem 0rem 1rem 0rem;
 }
 .headerDate {
   font-size: 1rem;
