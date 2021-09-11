@@ -17,7 +17,7 @@
         <div class="noteBlue">
           Background
           <p class="paragraph">
-            Maching learning has become increasingly relevant in recent years
+            Machine learning has become increasingly relevant in recent years
             across all computing devices. Machine Learning models have a variety
             of uses, such as image detection, speech recognition, and behavior
             recognition. Unfortunately, Machine Learning models are generally
@@ -46,15 +46,15 @@
         <div class="noteOrange">
           Goals
           <p class="paragraph">
-            The goal of this project is to design and optmize machine learning
+            The goal of this project is to design and optimize machine learning
             algorithms for deployment on IoT, embedded and edge computing
             devices. Specifically, the project will result in machine learning
-            models for image classification and natural language processing.
-            These models will be optimized through techniques such as pruning,
-            quantization, and knowledge distillation. The resulting models
-            should be able to produce accurate results much more quickly than
-            current, un-optimized models. These models will be deployed on a
-            variety of devices including Raspberry Pi and smart devices.
+            models for image classification and video processing. These models
+            will be optimized through techniques such as pruning, quantization,
+            and knowledge distillation. The resulting models should be able to
+            produce accurate results much more quickly than current,
+            un-optimized models. These models will be deployed on a variety of
+            devices including Raspberry Pi and smart devices.
           </p>
         </div>
       </div>
