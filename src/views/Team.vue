@@ -22,7 +22,7 @@
           </p>
         </div>
         <div class="column">
-          <img src="@/assets/IMG_2823m.png" class="imageCrop" />
+          <img src="@/assets/isaac.png" class="imageCrop" />
           <div class="nameHeader">
             ISAAC JACOBSON
             <v-btn icon @click="open('isaac')">

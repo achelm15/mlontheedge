@@ -65,7 +65,7 @@
           <div>ANDREW HELMREICH</div>
           <div>FLETCHER OUREN</div>
           <div>AHMED MOHAMMAD</div>
-          <div>ISAAC JACOBSON</div>
+          <div>ISAAC JACOBSON (VIP)</div>
         </div>
         <div class="team">ADVISOR</div>
         <div class="names">DR. SUDEEP PASRICHA</div>
