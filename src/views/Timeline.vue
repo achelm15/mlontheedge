@@ -69,6 +69,11 @@ export default Vue.extend({
         },
         {
           date: '2/15/2021',
+          item: 'Research Edge Device Deployment Methods',
+          status: 'Incomplete'
+        },
+        {
+          date: '2/15/2021',
           item: 'Optimize Model for Edge Devices',
           status: 'Incomplete'
         },
