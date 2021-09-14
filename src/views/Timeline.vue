@@ -59,7 +59,7 @@ export default Vue.extend({
         },
         {
           date: '11/15/2021',
-          item: 'Begin to Attempt LPCV Challenge',
+          item: 'Begin LPCV Challenge',
           status: 'Incomplete'
         },
         {
