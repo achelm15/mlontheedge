@@ -1,16 +1,15 @@
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ],
+  transpileDependencies: ['vuetify'],
+  publicPath: '/',
   devServer: {
     disableHostCheck: true,
-    proxy: "http://localhost:8000"
+    proxy: 'http://localhost:8000'
   },
   configureWebpack: {
-    module:{
+    module: {
       rules: [
         {
-          test: /config.*config\.js$/,
+          test: /config.*config\.js$/
         }
       ]
     }
