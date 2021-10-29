@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="end">
-      <p class="paragraph">Last Updated 9/17/2021</p>
+      <p class="paragraph">Last Updated 10/29/2021</p>
     </div>
   </div>
 </template>
@@ -40,7 +40,7 @@ export default Vue.extend({
         {
           date: '9/07/2021',
           item: 'Research and Test Image Classification Models',
-          status: 'In Progress'
+          status: 'Completed'
         },
         {
           date: '9/15/2021',
@@ -50,22 +50,22 @@ export default Vue.extend({
         {
           date: '9/17/2021',
           item: 'Outline Initial Project Plan',
-          status: 'In Progress'
+          status: 'Completed'
         },
         {
           date: '10/15/2021',
-          item: 'Research and Test Video Recognition Models',
-          status: 'Incomplete'
+          item: 'Research and Test Object Detection Models on Video',
+          status: 'In Progress'
         },
         {
           date: '11/15/2021',
-          item: 'Begin LPCV Challenge',
-          status: 'Incomplete'
+          item: 'Begin LPCV Challenge with Multiple Models',
+          status: 'In Progress'
         },
         {
           date: '12/15/2021',
           item: 'Evaluate and Acquire Edge Devices for Deployment',
-          status: 'Incomplete'
+          status: 'Completed'
         },
         {
           date: '2/15/2021',

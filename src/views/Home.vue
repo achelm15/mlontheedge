@@ -35,7 +35,7 @@
           <p class="paragraph">
             As this project aims to optimize machine learning models,
             specifically Convolutional Nueral Networks, on resource constrained
-            devices the constraints for this project are many. These devices
+            devices, the constraints for this project are many. These devices
             generally operate on low power with a smaller amount of memory than
             seen on other computing platforms. Additionally, these devices
             generally lack processing power of their larger counterparts. As
@@ -49,12 +49,12 @@
             The goal of this project is to design and optimize machine learning
             algorithms for deployment on IoT, embedded and edge computing
             devices. Specifically, the project will result in machine learning
-            models for image classification and video processing. These models
-            will be optimized through techniques such as pruning, quantization,
-            and knowledge distillation. The resulting models should be able to
-            produce accurate results much more quickly than current,
-            un-optimized models. These models will be deployed on a variety of
-            devices including Raspberry Pi and smart devices.
+            models for object detection. These models will be optimized through
+            techniques such as pruning, quantization, and clustering. The
+            resulting models should be able to produce accurate results much
+            more quickly than current, un-optimized models. These models will be
+            deployed on a variety of devices including Raspberry Pi and smart
+            devices.
           </p>
         </div>
       </div>
