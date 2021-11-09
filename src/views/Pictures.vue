@@ -1,11 +1,25 @@
 <template>
   <div class="container">
     <div class="titleText">PICTURES</div>
-    <div class="mainContainer">Check back later for more</div>
+    <div class="mainContainer">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <img src="@/assets/yolov5lpcvgif.gif" class="imageCrop" />
+            <figcaption class="font">YOLOv5 Trained on LPCV Data</figcaption>
+          </div>
+          <div class="col">
+            <img src="@/assets/yolov5gif.gif" class="imageCrop" />
+            <figcaption class="font">
+              YOLOv5 Trained on the Kitti Dataset
+            </figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="end">
       <p class="paragraph">
-        This page will be updated with pictures relevant to the project when
-        they become available
+        This page will be updated more pictures when available
       </p>
     </div>
   </div>
@@ -53,6 +67,12 @@ export default Vue.extend({
   padding-bottom: 3rem;
   min-height: 50rem;
 }
+.col {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
 .row {
   width: inherit;
   display: flex;
@@ -74,5 +94,14 @@ export default Vue.extend({
   flex-direction: column;
   justify-items: center;
   align-items: center;
+}
+.imageCrop {
+  width: 45rem; /* width of container */
+  height: 32rem; /* height of container */
+  object-fit: cover;
+  object-position: 0% 30%;
+}
+.font {
+  font-size: 1.5rem;
 }
 </style>
