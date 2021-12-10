@@ -55,12 +55,12 @@ export default Vue.extend({
         {
           date: '10/15/2021',
           item: 'Research and Test Object Detection Models on Video',
-          status: 'In Progress'
+          status: 'Completed'
         },
         {
           date: '11/15/2021',
           item: 'Begin LPCV Challenge with Multiple Models',
-          status: 'In Progress'
+          status: 'Completed'
         },
         {
           date: '12/15/2021',
@@ -69,13 +69,13 @@ export default Vue.extend({
         },
         {
           date: '2/15/2021',
-          item: 'Research Edge Device Deployment Methods',
-          status: 'Incomplete'
+          item: 'Research Edge Model Deployment Methods',
+          status: 'In Progress'
         },
         {
           date: '2/15/2021',
           item: 'Optimize Model for Edge Devices',
-          status: 'Incomplete'
+          status: 'In Progress'
         },
         {
           date: '3/15/2021',
@@ -95,14 +95,7 @@ export default Vue.extend({
       ]
     }
   },
-  methods: {
-    getColor(calories) {
-      console.log(calories)
-      if (calories > 400) return 'red'
-      else if (calories > 200) return 'orange'
-      else return 'green'
-    }
-  }
+  methods: {}
 })
 </script>
 

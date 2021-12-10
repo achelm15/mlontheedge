@@ -10,7 +10,7 @@
     </div>
     <div class="mainContainer">
       The Team
-      <img src="@/assets/team.jpg" class="imageCrop" />
+      <img src="@/assets/Team/team.jpg" class="imageCrop" />
     </div>
     <div class="spacers">
       <div class="row">

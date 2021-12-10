@@ -5,7 +5,7 @@
       <div>STUDENTS</div>
       <div class="row">
         <div class="column">
-          <img src="@/assets/andrew.png" class="imageCrop" />
+          <img src="@/assets/Team/andrew.png" class="imageCrop" />
           <div class="nameHeader">
             ANDREW HELMREICH
             <v-btn icon @click="open('andrew')">
@@ -22,7 +22,7 @@
           </p>
         </div>
         <div class="column">
-          <img src="@/assets/isaac.png" class="imageCrop" />
+          <img src="@/assets/Team/isaac.png" class="imageCrop" />
           <div class="nameHeader">
             ISAAC JACOBSON
             <v-btn icon @click="open('isaac')">
@@ -41,7 +41,7 @@
       </div>
       <div class="row">
         <div class="column2">
-          <img src="@/assets/ahmed.png" class="imageCrop" />
+          <img src="@/assets/Team/ahmed.png" class="imageCrop" />
           <div class="nameHeader">
             AHMED MOHAMMAD
             <v-btn icon @click="open('ahmed')">
@@ -58,7 +58,7 @@
           </p>
         </div>
         <div class="column2">
-          <img src="@/assets/fletcher.png" class="imageCrop" />
+          <img src="@/assets/Team/fletcher.png" class="imageCrop" />
           <div class="nameHeader">
             FLETCHER OUREN
             <v-btn icon @click="open('fletcher')">
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="column2">
           <div class="spacing">ADVISING PROFESSOR</div>
-          <img src="@/assets/sudeep.jpg" class="imageCrop" />
+          <img src="@/assets/Team/sudeep.jpg" class="imageCrop" />
           <div class="nameHeader">
             DR. SUDEEP PASRICHA
             <v-btn icon @click="open('sudeep')">

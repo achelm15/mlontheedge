@@ -5,14 +5,12 @@
       <div class="col">
         <div class="row">
           <div class="col">
-            <img src="@/assets/yolov5lpcvgif.gif" class="imageCrop" />
+            <img src="@/assets/Results/yolov5lpcvgif.gif" class="imageCrop" />
             <figcaption class="font">YOLOv5 Trained on LPCV Data</figcaption>
           </div>
           <div class="col">
-            <img src="@/assets/yolov5gif.gif" class="imageCrop" />
-            <figcaption class="font">
-              YOLOv5 Trained on the Kitti Dataset
-            </figcaption>
+            <img src="@/assets/Results/retinanet.jpg" class="imageCrop" />
+            <figcaption class="font">RetinaNet Trained on LPCV Data</figcaption>
           </div>
         </div>
       </div>
